@@ -13,6 +13,7 @@ resource "helm_release" "argocd-helm" {
   }
 }
 
+#apply the argocd app of apps manifest
 resource "kubectl_manifest" "test" {
   yaml_body = file("${path.module}/../rancher/root.yaml")
 

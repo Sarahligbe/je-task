@@ -28,4 +28,11 @@ The **terraform/** directory contains the terraform files to install argocd and 
     terraform apply -auto-approve
 ```
 
-**_Note:_** in the **terraform/providers.tf** file, you can change the path to your kubeconfig file
+**_Note:_** in the **terraform/providers.tf** file, you can change the path to your kubeconfig file.
+
+**_Also note:_** if you're using the default k3s kube config path, ensure you update the permissions 
+
+Run the following command to get the argocd initial admin password
+```bash
+     kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
