@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     path: rancher/applications
-    repoURL: https://github.com/Sarahligbe/rancher-task.git
+    repoURL: https://github.com/Sarahligbe/je-task.git
     targetRevision: HEAD
   destination:
     namespace: default

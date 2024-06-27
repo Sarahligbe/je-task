@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Sarahligbe/rancher-task.git
+    repoURL: https://github.com/Sarahligbe/je-task.git
     targetRevision: HEAD
     path: helm-chart/ChartTest1
   destination:
